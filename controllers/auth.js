@@ -95,10 +95,11 @@ exports.register = (req, res, next) => {
 };
 
 // exports.getUsers = (req, res, next) => {
+//     const { userId } = req.body;
 //     User.find()
 //         .then((users) => {
 //             let updatedUsers = users.filter((data) => {
-//                 return data._id.toString() != user._id.toString();
+//                 return data._id.toString() != userId.toString();
 //             });
 //             updatedUsers = updatedUsers.map((userData) => {
 //                 return {
@@ -106,7 +107,7 @@ exports.register = (req, res, next) => {
 //                     name: userData.name,
 //                 };
 //             });
-//             res.send({ message: "User Fetched Successfully!", users:  });
+//             res.status(200).send({ message: "User Fetched Successfully!", users: updatedUsers });
 //         })
 //         .catch((error) => {
 //             console.log(error);
