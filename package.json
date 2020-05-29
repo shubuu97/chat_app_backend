@@ -1,0 +1,26 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4",
+        "socket.io": "^2.3.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "mongodb": "^3.5.2",
+        "mongoose": "^5.9.2"
+    },
+    "engines": {
+        "node": "12.x"
+    }
+}
